@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web IDE Interface</title>
+    <style>
+        /* Based on the decoded styling from your HEX/Binary data */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1e1e1e; /* VS Code Dark Grey */
+            color: #d4d4d4;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            width: 60px;
+            background-color: #333333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+            border-right: 1px solid #444;
+        }
+
+        .sidebar-icon {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 25px;
+            background-color: #555;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* File Explorer Area */
+        .explorer {
+            width: 250px;
+            background-color: #252526;
+            padding: 15px;
+            font-size: 13px;
+        }
+
+        .explorer h2 {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #858585;
+            margin-bottom: 20px;
+        }
+
+        /* Main Editor/Content Area */
+        .main-container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            height: 40px;
+            background-color: #2d2d2d;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            border-bottom: 1px solid #1e1e1e;
+        }
+
+        .search-bar {
+            background-color: #3c3c3c;
+            border: 1px solid #666;
+            color: white;
+            padding: 4px 10px;
+            width: 300px;
+            border-radius: 3px;
+        }
+
+        .editor-space {
+            flex-grow: 1;
+            padding: 40px;
+            background-color: #1e1e1e;
+        }
+
+        .welcome-card {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #333;
+            padding: 20px;
+            background: #252526;
+            border-radius: 8px;
+        }
+
+        h1 { color: #569cd6; font-weight: normal; }
+        code { color: #ce9178; }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="sidebar-icon"></div>
+        <div class="sidebar-icon"></div>
+        <div class="sidebar-icon"></div>
+    </nav>
+
+    <aside class="explorer">
+        <h2>Explorer: Project</h2>
+        <div style="color: #9cdcfe;">▼ index.html-IDE</div>
+        <div style="margin-left: 15px; margin-top: 5px;">📄 index.html</div>
+        <div style="margin-left: 15px; margin-top: 5px;">📄 README.md</div>
+    </aside>
+
+    <div class="main-container">
+        <header>
+            <input type="text" class="search-bar" placeholder="Search files...">
+        </header>
+        
+        <main class="editor-space">
+            <div class="welcome-card">
+                <h1>Welcome to your HTML IDE</h1>
+                <p>The code you provided has been successfully decoded and converted into this structural layout.</p>
+                <p>Current File: <code>index.html-IDE/index.html</code></p>
+                <hr style="border: 0; border-top: 1px solid #444; margin: 20px 0;">
+                <p style="font-size: 0.9em; color: #858585;">Ready to start coding...</p>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
